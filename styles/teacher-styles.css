@@ -77,9 +77,11 @@ li {
   bottom: 5px;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .btn-link {
+  width: 100%;
   display: block;
   background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -87,6 +89,8 @@ li {
   padding: 10px 20px;
   margin: 20px 0;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-provide-answer {
@@ -98,6 +102,7 @@ li {
   margin: 20px 0;
   border: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* Header */
@@ -206,6 +211,20 @@ li {
 
 /* HEADER */
 
+.questions-answers a,
+.questions-answers span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333333;
+  transition: 0.5s;
+}
+
+.questions-answers a:hover {
+  color: #fff;
+}
+
 .teacher-custom-select {
   display: flex;
   justify-content: space-between;
@@ -280,7 +299,7 @@ li {
   position: relative;
   width: 100%;
   max-width: 750px;
-  min-height: 410px;
+  min-height: 390px;
 }
 
 .student-chat p {
