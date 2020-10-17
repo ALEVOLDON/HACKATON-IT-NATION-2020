@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Global style */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  /* list-style: none; */
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 270px;
+  height: 70px;
+  background: linear-gradient(180deg, #a6d04d 0%, #88bb1c 44.79%, #a6d04d 100%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 16px 60px;
+}
+
+/* Header */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+  background: linear-gradient(to bottom, #80bc00, #415c08, #80bc00);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #E7EDED;
+}
+
+/* MAIN */
+
+.main-teacher-wripper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.teacher-card {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  max-height: 200px;
+}
+
+.teacher-photo {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.teacher-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin-left: 40px;
+}
+
+.teacher-card-btn {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.teacher-active-links {
+  margin-right: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.active-links-list {
+  border: 10px solid rgba(159, 204, 63, 0.75);
+  border-radius: 15px;
+  padding: 20px 40px;
+  
+}
+
+.active-links-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #101010;
+  padding: 10px 0;
+}
+
+.teacher-analysis-of-answers {
+  border: 10px solid rgba(159, 204, 63, 0.75);
+  border-radius: 15px;
+  padding: 20px 40px;
+  margin-right: 100px;
+}
+
+.teacher-analysis-of-answers h2 {
+  text-align: center;
+}
+
+.analysis-of-answers-item {
+  background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  list-style: none;
+}
