@@ -83,7 +83,7 @@ li {
 .btn-link {
   width: 100%;
   display: block;
-  background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
+  background: linear-gradient(180deg, #a6d04d 0%, #88bb1c 44.79%, #a6d04d 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px 20px;
@@ -95,7 +95,7 @@ li {
 
 .btn-provide-answer {
   width: 100%;
-  background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
+  background: linear-gradient(180deg, #a6d04d 0%, #88bb1c 44.79%, #a6d04d 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px 20px;
@@ -127,14 +127,14 @@ li {
   font-weight: bold;
   font-size: 40px;
   line-height: 47px;
-  color: #E7EDED;
+  color: #e7eded;
 }
 
 /* MAIN */
 
 .main-teacher {
   min-height: 80vh;
-  background-image: url('../img/teacher-home-bg.jpg');
+  background-image: url("../img/teacher-home-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -145,7 +145,7 @@ li {
 }
 
 .teacher-column {
-   margin-top: 100px;
+  margin-top: 100px;
 }
 
 .teacher-card {
@@ -240,7 +240,7 @@ li {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  color: #E7EDED;
+  color: #e7eded;
   cursor: pointer;
   padding-left: 20px;
 }
@@ -250,7 +250,7 @@ li {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  color: #E7EDED;
+  color: #e7eded;
 }
 
 .teacher-custom-select option:first-child {
@@ -260,7 +260,7 @@ li {
 .btn-plus {
   width: 80px;
   height: 80px;
-  background: #A6D04D;
+  background: #a6d04d;
   border: none;
   cursor: pointer;
 }
@@ -288,7 +288,6 @@ li {
 }
 
 .student-photo-list {
-  
 }
 
 .student-photo-item {
@@ -307,7 +306,7 @@ li {
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  color: #C7D0D9;
+  color: #c7d0d9;
 }
 
 .create-question,
@@ -331,9 +330,134 @@ li {
 }
 
 .students-questions h2 span {
-  background: #B7D96F;
+  background: #b7d96f;
   padding: 10px;
   margin-left: 10px;
 }
 
+/* teacher-answers-diagram */
 
+.main-answers-diagram-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-answers-col {
+  width: 100%;
+  max-width: 560px;
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.main-answers-diagram-wrapper > div:nth-child(1) {
+  justify-content: space-around;
+}
+
+div.main-answers-diagram-wrapper > div:nth-child(2) {
+  justify-content: flex-end;
+}
+
+.main-answers-col h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.btn-icon {
+  width: 200px;
+  height: 80px;
+  background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.diagram-list {
+  border: 5px solid #BFCAD3;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.diagram-item {
+  list-style: none;
+}
+
+.diagram-item span {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #BFCAD3;
+  margin: 20px;
+}
+
+div.main-answers-diagram-wrapper > div:nth-child(2) > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.green {
+  width: 90px;
+  height: 120px;
+  background: linear-gradient(180deg, #ADF218 0%, #50700B 100%);
+  box-shadow: 2px -1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.grey {
+  width: 90px;
+  height: 200px;
+  background: linear-gradient(180deg, #E7EDED 0%, #BFCAD3 100%);
+  box-shadow: 2px -1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.blue {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(180deg, #0E8AB4 0%, #1E5583 100%);
+  box-shadow: 2px -1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.student-question {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.student-question-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.student-question-wrapper:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "5";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 50px;
+  background: linear-gradient(180deg, #A6D04D 0%, #88BB1C 44.79%, #A6D04D 100%);
+  border-radius: 50px;
+  color: #fff;
+}
+
+.student-question-wrapper p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-left: 20px;
+}
